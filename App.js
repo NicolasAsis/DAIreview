@@ -7,6 +7,12 @@
  */
 
 import React from 'react';
-import Main from '../comps/Main';
+import App from '../comps/App';
+
+function App(){
+  return (
+    <App />
+  );
+}
 
 export default App;

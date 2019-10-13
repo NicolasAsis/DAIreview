@@ -6,7 +6,9 @@ import Bot from './Bot';
 
 function Main(){
     return (
-
+        <Top />
+        <Mid />
+        <Bot />
     );
 }
 
