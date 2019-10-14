@@ -7,11 +7,14 @@
  */
 
 import React from 'react';
-import App from '../comps/App';
+import {View} from 'react-native';
+import Main from './comps/Main';
 
 function App(){
   return (
-    <App />
+    <View>
+      <Main/>
+    </View>
   );
 }
 
