@@ -1,3 +1,12 @@
+
+import React from 'react';
+import {View,Text} from 'react-native';
+
+function Mid(){
+    return (
+        <View>
+
+
 import React,{useState} from 'react';
 import {Text, View, Picker} from 'react-native';
 
@@ -13,6 +22,7 @@ function Mid(){
                 <Picker.Item label="Blue" value="blue" />
                 <Picker.Item label="Green" value="green" />
             </Picker>
+
         </View>
     );
 }
