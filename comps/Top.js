@@ -1,18 +1,40 @@
-import React from 'react';
-import {View, Text, Switch} from 'react-native'
+import React, {useState} from 'react';
+import {View, Text, Switch, StyleSheet} from 'react-native'
 
 function Top(){
-    return (
-        <View>
-            <Switch style = {{
-                justifyContent: "center",
-                alignItems: "center",
+    const [TopText, setTopText] = useState("Top Comp");
+    const [TopStyle, setTopStyle] = useState({
+        backgroundColor: "#000000"
+    });
 
-            }} 
+    
+    return (
+        <View style = {styles.container}>
+            <Switch style = {{
+                margin: 20
+            }}
+    
             />
-            <Text>Day Mode</Text>
+
+            <Text style = {{
+                alignItems: 'center',
+                alignContent: 'center',
+                textAlign: 'center'
+            }}
+            >Day Mode</Text>
         </View>
-    );
+    )
 }
+const styles = StyleSheet.create ({
+    container: {
+       flex: 1,
+       alignItems: 'center',
+       marginTop: 100
+    }
+}
+);
+
+
+
 
 export default Top;
